@@ -2,9 +2,9 @@
   "hostURL": "http://<hostname or host ip>/nPOauditTrailViewer/",
   "sqlServer": {
     "serverName": "localhost",
-    "userName": "sa_audit",
+    "userName": "sa",
     "password": "12345",
-    "DBname": "NPO_HAT",
+    "DBname": "AuditTrail",
 	"staticFilterList": ["TagName NOT LIKE '%WIZPRINTSCREEN%'"] 
   },
   "ajax": {
