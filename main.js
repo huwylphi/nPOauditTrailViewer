@@ -46,7 +46,7 @@
     });
 	// format datepicker
 	$( "#from, #to" ).datepicker( "option", "dateFormat", "dd/mm/yy" );
-	$( "#from, #to" ).datepicker( "option", $.datepicker.regional[ "it" ] );
+	$( "#from, #to" ).datepicker( "option", $.datepicker.regional[ "de" ] );
 	
 	// init datepicker with date of today or from url params startDate and endDate (in absolute or relative format)
 	$( "#to" ).datepicker('setDate', new Date());
@@ -112,7 +112,7 @@
 		var t = $.datepicker.formatDate( "yy-mm-dd", new Date( $( "#to" ).datepicker( "getDate" ) ) );	//	EN SQL VERSION
 		//var t = $.datepicker.formatDate( "dd.mm.yy", new Date( $( "#to" ).datepicker( "getDate" ) ) );	//	DE SQL VERSION
 
-		var req = './getData_it.php?';
+		var req = './getData.php?';
 		if($( "#from" ).val()) {
 			req = req + 'startDate='+f;
 		}
@@ -168,14 +168,14 @@
 							"data": json.data,
 							"columns": ATtblColumnNames4DataTable,
 							"language": {
-								"url": "./inc/localisation/it_IT.json.txt"
+								"url": "./inc/localisation/de_DE.json.txt"
 							},
 							"destroy": true,
 							"responsive": true,
 							"autoWidth": true,
 							"scrollX": true,
 							"stateSave": true,
-							"lengthMenu": [ [10, 20, 50, 100, -1], [10, 20, 50, 100, "Tutti"] ],
+							"lengthMenu": [ [10, 20, 50, 100, -1], [10, 20, 50, 100, "ALL"] ],
 							"paging": true,
 							"pagingType": "full_numbers",
 							"dom": 'RTC<"clear">lfrtip',
@@ -196,7 +196,7 @@
 								"aButtons": [
 									{
 										"sExtends": "copy",
-										"sButtonText": "Copia"
+										"sButtonText": "COPY"
 									},
 									{
 										"sExtends": "csv",
@@ -214,7 +214,7 @@
 									},
 									{
 										"sExtends": "print",
-										"sButtonText": "Stampare"
+										"sButtonText": "PRINT"
 									}
 								]
 							}
