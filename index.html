@@ -1,0 +1,50 @@
+<!--
+version: 1.4
+date: 2016-05-23
+developer: Ph. Huwyler
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" type="image/png" href="./favicon.png"/>
+<link rel="stylesheet" type="text/css" href="./inc/css/normalize.css">
+<link rel="stylesheet" type="text/css" href="./inc/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="./inc/css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="./inc/css/dataTables.tableTools.css">
+<link rel="stylesheet" type="text/css" href="./inc/css/dataTables.colReorder.css">
+<link rel="stylesheet" type="text/css" href="./inc/css/dataTables.colVis.css">
+<!--<link rel="stylesheet" type="text/css" href="./inc/css/bootstrap.min.css">-->
+<!--<link rel="stylesheet" type="text/css" href="./inc/css/dataTables.bootstrap.css">-->
+<link rel="stylesheet" type="text/css" href="./inc/css/main.css">
+</head>
+<body>
+<script type="text/javascript" charset="utf8" src="./inc/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" charset="utf8" src="./inc/js/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf8" src="./inc/js/datepicker-it.js"></script>
+<script type="text/javascript" charset="utf8" src="./inc/js/jquery.dataTables.min.js"></script>
+<!--<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>-->
+<script type="text/javascript" charset="utf8" src="./inc/js/dataTables.tableTools.js"></script>
+<script type="text/javascript" charset="utf8" src="./inc/js/dataTables.colReorder.js"></script>
+<script type="text/javascript" charset="utf8" src="./inc/js/dataTables.colVis.js"></script>
+<!--<script type="text/javascript" charset="utf8" src="./inc/js/dataTables.bootstrap.js"></script>-->
+<script type="text/javascript" charset="utf8" src="./main.js"></script>
+
+<div id="header">
+    <img src="inc/images/logo.png" class="ribbon"/>
+    <div id="title" style="color: #008AC5; font-weight:bold; font-size:2em;">NOVAPRO OPEN AUDITTRAIL VIEWER</div>
+	<br /><br />
+</div>
+<hr>
+<div id="period">
+<label>PERIODO:</label>
+<label for="from">DA</label>&nbsp;&nbsp;<input type="text" id="from" name="from">
+<label for="to">AL</label>&nbsp;&nbsp;&nbsp;<input type="text" id="to" name="to">&nbsp;&nbsp;&nbsp;
+<button>VALUTARE</button>
+<label id="tblCaption">&nbsp;</label><hr><br />
+</div>
+<table id="tbl" class="tbl row-border hover stripe nowrap" style="color: #404040;" cellspacing="0" data-order='[[ 10, "asc" ]]' data-page-length='10'>
+	<caption style="font-size:1.3em; margin-bottom:25px;">&nbsp;</caption>
+</table>
+</body>
+</html>

@@ -1,0 +1,35 @@
+#header {
+    position: relative;
+}
+#header img {
+    position: absolute;
+    top: 0px;
+    right: 12px;
+}
+#title {
+	margin-left: 12px;
+	margin-top: 12px;
+}
+#period {
+	color: #008AC5;
+}
+#period label{
+	margin-left: 12px;
+}
+.ui-datepicker-header {  
+    background: #FDD91C;  
+    color: #008AC5;  
+    border-color: #96CDEA;  
+}
+#tblCaption {
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+button.ColVis_Button {
+	height: 28px;
+}
+.dataTables_filter input {
+	margin-right: 3px;
+	height: 22px;
+}
