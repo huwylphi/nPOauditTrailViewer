@@ -1,3 +1,6 @@
+this project has been moved to gitlab: https://gitlab.com/huwylphi/nPOauditTrailViewer
+
+--------------------
 # nPOauditTrailViewer
 an alternativ audittrail viewer for novaPro Open
 
